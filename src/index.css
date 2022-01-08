@@ -7,5 +7,11 @@
 }
 
 html {
-	/* font-family: "Inter"; */
+	font-family: "Inter";
+}
+
+@layer components {
+	.project-card {
+		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-[26rem] p-4 my-[2rem] mx-0 hover:border-stone-900 hover:border-2;
+	}
 }

@@ -10,8 +10,31 @@ html {
 	font-family: "Inter";
 }
 
+.header-shadow {
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 12%);
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid black;
+	text-align: center;
+	padding-top: 6px;
+}
+
 @layer components {
+	.projects-container {
+		@apply flex flex-wrap justify-around;
+	}
+
 	.project-card {
 		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-[26rem] p-4 my-[2rem] mx-0 hover:border-stone-900 hover:border-2;
+	}
+	
+	.project-card h3 {
+		@apply text-center text-3xl font-semibold uppercase;
 	}
 }

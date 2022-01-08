@@ -1,0 +1,28 @@
+{
+  "name": "cwbieganek.github.io",
+  "version": "0.0.1",
+  "description": "My portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/index.css -o ./dist/index.css && cp ./src/index.html ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwbieganek/cwbieganek.github.io.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Chris",
+    "Bieganek"
+  ],
+  "author": "Chris Bieganek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwbieganek/cwbieganek.github.io/issues"
+  },
+  "homepage": "https://github.com/cwbieganek/cwbieganek.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.12"
+  }
+}

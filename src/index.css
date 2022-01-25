@@ -27,14 +27,18 @@ html {
 
 @layer components {
 	.projects-container {
-		@apply flex flex-wrap justify-around;
+		@apply grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 justify-items-center;
 	}
 
 	.project-card {
-		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-[26rem] p-4 my-[2rem] mx-0 hover:border-stone-900 hover:border-2;
+		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-5/6 p-4 my-[2rem] mx-0 hover:border-stone-900 overflow-hidden;
 	}
 	
 	.project-card h3 {
 		@apply text-center text-3xl font-semibold uppercase;
+	}
+
+	.project-thumbnail {
+		@apply w-2/3 h-48 text-center py-4 mx-auto;
 	}
 }

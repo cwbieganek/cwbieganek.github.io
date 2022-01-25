@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/index.css -o ./dist/index.css && cp ./src/index.html ./dist"
+    "build": "tailwindcss -i ./src/index.css -o ./dist/index.css && cp ./src/index.html ./dist",
+    "watch": "cp ./src/index.html ./dist && tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
   },
   "repository": {
     "type": "git",

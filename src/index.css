@@ -31,10 +31,14 @@ html {
 	}
 
 	.project-card {
-		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-5/6 p-4 my-[2rem] mx-0 hover:border-stone-900;
+		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-5/6 p-4 my-[2rem] mx-0 hover:border-stone-900 overflow-hidden;
 	}
 	
 	.project-card h3 {
 		@apply text-center text-3xl font-semibold uppercase;
+	}
+
+	.project-thumbnail {
+		@apply w-2/3 h-48 text-center border border-black py-4 mx-auto;
 	}
 }

@@ -39,6 +39,6 @@ html {
 	}
 
 	.project-thumbnail {
-		@apply w-2/3 h-48 text-center border border-black py-4 mx-auto;
+		@apply w-2/3 h-48 text-center py-4 mx-auto;
 	}
 }

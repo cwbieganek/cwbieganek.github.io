@@ -40,7 +40,7 @@ html, body {
 	}
 
 	.project-card-content {
-		@apply overflow-hidden w-full h-full;
+		@apply overflow-hidden w-full h-full flex flex-col;
 	}
 	
 	.project-card h3 {
@@ -51,8 +51,12 @@ html, body {
 		@apply w-2/3 h-48 text-center py-4 mx-auto;
 	}
 
+	.project-card-links-row {
+		@apply relative p-4 flex-1;
+	}
+
 	.project-card-link {
-		@apply absolute text-xl hover:underline bottom-0;
+		@apply absolute text-xl font-semibold hover:underline bottom-0 align-bottom;
 	}
 
 	.project-card-demo {

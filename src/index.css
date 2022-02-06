@@ -36,11 +36,11 @@ html, body {
 	}
 
 	.project-card {
-		@apply rounded-md shadow-md bg-white border border-stone-300 h-[32rem] w-5/6 p-4 my-[2rem] mx-0 hover:border-stone-900;
+		@apply rounded-md shadow-md bg-white border border-stone-300 h-[36rem] w-5/6 p-4 my-[2rem] mx-0 hover:border-stone-900;
 	}
 
 	.project-card-content {
-		@apply overflow-hidden w-full h-full;
+		@apply overflow-hidden w-full h-full flex flex-col;
 	}
 	
 	.project-card h3 {
@@ -49,5 +49,21 @@ html, body {
 
 	.project-thumbnail {
 		@apply w-2/3 h-48 text-center py-4 mx-auto;
+	}
+
+	.project-card-links-row {
+		@apply relative p-4 flex-1;
+	}
+
+	.project-card-link {
+		@apply absolute text-xl font-semibold hover:underline bottom-0 align-bottom;
+	}
+
+	.project-card-demo {
+		@apply left-0;
+	}
+
+	.project-card-github {
+		@apply right-0;
 	}
 }
